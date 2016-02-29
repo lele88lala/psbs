@@ -1,0 +1,51 @@
+body{
+    margin: 0px;
+    padding:0px;
+}
+#siteNavOuter{
+    background-color: #F7F7F7;
+
+}
+#siteNav{
+    background-color: #F7F7F7;
+    font-size:12px;
+    height:35px;
+    line-height: 35px;
+    width:1200px;
+    margin:0 auto;
+}
+.siteNavRClass,.siteNavLClass{
+    float:left;
+    margin-right: 7px;
+}
+.siteNavRClass{
+    padding-left:0 7px;
+}
+#siteNavLeftMobile{
+    margin-left:12px;
+}
+#siteNavLeftLogin{
+    margin-left:7px;
+}
+#siteNavRight{
+    float:right;
+}
+#siteNavARed{
+    color:red;
+}
+.siteNavA{
+    color:#6c6c6c;
+    text-decoration: none;
+}
+.siteNavA:hover {
+    color: red;
+}
+.siteNavIcon{
+    margin:0 7px;
+}
+#siteNavIconCar,.fa-shopping-cart,.fa-bars,#siteNavIconNav{
+    color:red;
+}
+.fa-star{
+    color:#6c6c6c;
+}
