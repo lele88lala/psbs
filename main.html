@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <title></title>
 </head>
+<script type="text/javascript" src="jquery/jquery.js"></script>
+<script type="text/javascript" src="js/mainjs.js"></script>
 <body>
 <div id="siteNavOuter">
     <div id="siteNav">
@@ -21,14 +23,31 @@
             </div>
         </div>
         <div id="siteNavRight">
-            <div id="siteNavRightTao" class="siteNavRClass">
-                <a class="siteNavA" href="#">我的淘宝</a><span class="siteNavIcon"><i id="siteNavIconTao" class="fa fa-angle-down"></i></span>
+            <div id="siteNavRightTao" class="siteNavRClass siteNavRClassHasTwo">
+
+                <a class="siteNavA" href="#">我的淘宝<span class="siteNavIcon siteNavIconRight"><i class="fa fa-angle-down"></i></span></a>
+                <div id="siteNavRightTaoTwo" name="nav_b_mytb_div" class="siteNavRightTwoDiv" style="display:">
+                    <ul id="siteNavRightTaoTwoUl">
+                        <li class="siteNavRightTaoTwoLi"><a class="siteNavRightCenterLiA" href="#">已买到的宝贝</a></li>
+                        <li class="siteNavRightTaoTwoLi"><a class="siteNavRightCenterLiA" href="#">我的足迹</a></li>
+                        <li class="siteNavRightTaoTwoLi"><a class="siteNavRightCenterLiA" href="#">我的上新</a></li>
+                        <li class="siteNavRightTaoTwoLi"><a class="siteNavRightCenterLiA" href="#">爱逛街</a></li>
+                        <li class="siteNavRightTaoTwoLi"><a class="siteNavRightCenterLiA" href="#">淘宝达人</a></li>
+                        <li class="siteNavRightTaoTwoLi"><a class="siteNavRightCenterLiA" href="#">新欢</a></li>
+                    </ul>
+                </div>
             </div>
             <div id="siteNavRightCar" class="siteNavRClass">
-                <span class="siteNavIcon"><i class="fa fa-shopping-cart"></i></span><a class="siteNavA" href="#">购物车</a><span class="siteNavIcon"><i id="siteNavIconCar" class="fa fa-angle-down"></i></span>
+                <a class="siteNavA" href="#"><span class="siteNavIcon siteNavIconLeft"><i class="fa fa-shopping-cart"></i></span>购物车<span class="siteNavIcon siteNavIconRight"><i id="siteNavIconCar" class="fa fa-angle-down"></i></span></a>
             </div>
-            <div id="siteNavRightFolder" class="siteNavRClass">
-                <span class="siteNavIcon"><i class="fa fa-star"></i></span><a class="siteNavA" href="#">收藏夹</a><span class="siteNavIcon"><i class="fa fa-angle-down"></i></span>
+            <div id="siteNavRightFolder" class="siteNavRClass siteNavRClassHasTwo">
+                <a class="siteNavA" href="#"><span class="siteNavIcon siteNavIconLeft"><i class="fa fa-star"></i></span>收藏夹<span class="siteNavIcon siteNavIconRight"><i class="fa fa-angle-down"></i></span></a>
+                <div id="siteNavRightFolderTwo" name="nav_b_folder_div" class="siteNavRightTwoDiv" style="display:none">
+                    <ul id="siteNavRightFolderUl">
+                        <li class="siteNavRightFolderLi"><a class="siteNavRightCenterLiA" href="#">收藏的宝贝</a></li>
+                        <li class="siteNavRightFolderLi"><a class="siteNavRightCenterLiA" href="#">收藏的店铺</a></li>
+                    </ul>
+                </div>
             </div>
             <div id="siteNavRightClass" class="siteNavRClass">
                 <a class="siteNavA" href="#">商品分类</a>
@@ -36,14 +55,29 @@
             <div id="siteNavRightColume" class="siteNavRClass">
                 |
             </div>
-            <div id="siteNavRightCenter" class="siteNavRClass">
-                <a class="siteNavA" href="#">卖家中心</a><span class="siteNavIcon"><i class="fa fa-angle-down"></i></span>
+            <div id="siteNavRightCenter" class="siteNavRClass siteNavRClassHasTwo">
+                <a class="siteNavA" href="#">卖家中心<span class="siteNavIcon siteNavIconRight"><i class="fa fa-angle-down"></i></span></a>
+                <div id="siteNavRightCenterTwo" name="nav_b_saler_div" class="siteNavRightTwoDiv" style="display:none">
+                    <ul id="siteNavRightCenterUl">
+                        <li class="siteNavRightCenterLi"><a class="siteNavRightCenterLiA" href="#">免费开店</a></li>
+                        <li class="siteNavRightCenterLi"><a class="siteNavRightCenterLiA" href="#">已卖出的宝贝</a></li>
+                        <li class="siteNavRightCenterLi"><a class="siteNavRightCenterLiA" href="#">出售中的宝贝</a></li>
+                        <li class="siteNavRightCenterLi"><a class="siteNavRightCenterLiA" href="#">卖家服务市场</a></li>
+                        <li class="siteNavRightCenterLi"><a class="siteNavRightCenterLiA" href="#">卖家培训中心</a></li>
+                    </ul>
+                </div>
             </div>
-            <div id="siteNavRightConnect" class="siteNavRClass">
-                <a class="siteNavA" href="#">联系客户</a><span class="siteNavIcon"><i class="fa fa-angle-down"></i></span>
+            <div id="siteNavRightConnect" class="siteNavRClass siteNavRClassHasTwo">
+                <a class="siteNavA" href="#">联系客户<span class="siteNavIcon siteNavIconRight"><i class="fa fa-angle-down"></i></span></a>
+                <div id="siteNavRightConnectTwo" name="nav_b_cust_div" class="siteNavRightTwoDiv" style="display:none">
+                    <ul id="siteNavRightConnectUl">
+                        <li class="siteNavRightConnectLi"><a class="siteNavRightCenterLiA" href="#">消费者克服</a></li>
+                        <li class="siteNavRightConnectLi"><a class="siteNavRightCenterLiA" href="#">卖家客服</a></li>
+                    </ul>
+                </div>
             </div>
             <div id="siteNavRightNav" class="siteNavRClass">
-                <span class="siteNavIcon"><i class="fa fa-bars"></i></span><a class="siteNavA" href="#">网站导航</a><span class="siteNavIcon"><i id="siteNavIconNav"class="fa fa-angle-down"></i></span>
+                <a class="siteNavA" href="#"><span class="siteNavIcon siteNavIconLeft"><i class="fa fa-bars"></i></span>网站导航<span class="siteNavIcon siteNavIconRight"><i id="siteNavIconNav"class="fa fa-angle-down"></i></span></a>
             </div>
         </div>
     </div>

@@ -16,10 +16,12 @@ body{
 }
 .siteNavRClass,.siteNavLClass{
     float:left;
-    margin-right: 7px;
 }
-.siteNavRClass{
-    padding-left:0 7px;
+.siteNavRClassHasTwo{
+    border-bottom: solid 1px #F7F7F7;
+    border-left: solid 1px #F7F7F7;
+    border-right: solid 1px #F7F7F7;
+    box-sizing: border-box;
 }
 #siteNavLeftMobile{
     margin-left:12px;
@@ -36,12 +38,17 @@ body{
 .siteNavA{
     color:#6c6c6c;
     text-decoration: none;
+    margin:0 5px;
+    display:block;
 }
 .siteNavA:hover {
     color: red;
 }
-.siteNavIcon{
-    margin:0 7px;
+.siteNavIconLeft{
+    margin:7px;
+}
+.siteNavIconRight{
+    margin:7px;
 }
 #siteNavIconCar,.fa-shopping-cart,.fa-bars,#siteNavIconNav{
     color:red;
@@ -49,3 +56,31 @@ body{
 .fa-star{
     color:#6c6c6c;
 }
+#siteNavRight li,#siteNavRight a{
+    list-style-type: none;
+    text-decoration: none;
+    color:#6c6c6c;
+}
+#siteNavRightTaoTwoUl,#siteNavRightFolderUl,#siteNavRightCenterUl,#siteNavRightConnectUl{
+    padding:0px;
+}
+#siteNavRight li{
+    height:25px;
+    line-height: 25px;
+    display:block;
+    width:72px;
+    margin-right:0px;
+}
+#siteNavRight .siteNavRightTwoDiv{
+    margin: 0 5px;
+}
+.siteNavRightCenterLiA{
+    height:25px;
+    display:block;
+    float:left;
+    width:inherit;
+}
+#siteNavRight a:hover{
+    background:#F7F7F7;
+}
+
