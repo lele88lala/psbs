@@ -41,6 +41,13 @@ body{
     margin:0 5px;
     display:block;
 }
+.siteNavAHover{
+    color:red;
+    text-decoration: none;
+    margin:0 5px;
+    background-color:white;
+    display:block;
+}
 .siteNavA:hover {
     color: red;
 }
@@ -83,4 +90,5 @@ body{
 #siteNavRight a:hover{
     background:#F7F7F7;
 }
+
 
